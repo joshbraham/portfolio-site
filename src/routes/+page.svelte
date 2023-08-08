@@ -1,2 +1,95 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+	<title>Welcome! &nbsp;|&nbsp; joshbraham.</title>
+	<meta name="description" content="Joshua Abrahaam's developer profile." />
+</svelte:head>
+
+<section class="hero">
+	<span class="greeting">Hello! My name is</span>
+	<h1 class="name">Joshua <span class="lastname">Abraham.</span></h1>
+	<p class="description">
+		I am an amateur frontend, backend, mobile, desktop, and API developer & software engineer.
+	</p>
+	<div class="ctas">
+		<a href="#" class="cta--contact">Contact Me &nbsp;<i class="fa-regular fa-envelope" /></a>
+		<a href="#" class="cta--cv">Download my CV &rarr;</a>
+	</div>
+</section>
+
+<hr />
+
+<style>
+	.hero {
+		height: 32rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: rgba(0, 0, 0, 0.95) url('./hero-img.jpg');
+		background-size: cover;
+		background-blend-mode: color;
+		padding-inline: var(--page-inline-padding);
+		padding-block-start: 3rem;
+	}
+
+	.hero > * {
+		display: block;
+		width: fit-content;
+	}
+
+	.greeting {
+		font-family: 'Raleway', sans-serif;
+		font-weight: bold;
+		letter-spacing: 0.2em;
+		color: #023afe;
+		text-transform: uppercase;
+	}
+
+	.name {
+		font-family: 'Raleway', sans-serif;
+		font-size: 40px;
+		font-weight: 900;
+		letter-spacing: -0.04em;
+		color: #ddd;
+		word-spacing: 0.125em;
+	}
+
+	.lastname {
+		color: rgb(177, 0, 177);
+	}
+
+	.description {
+		font-size: 24px;
+		width: 44ch;
+		line-height: 1.3;
+		color: white;
+	}
+
+	.ctas > * {
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+		font-weight: 800;
+		letter-spacing: 4px;
+		padding: 1rem 1.5rem;
+		margin-top: 1.5rem;
+		line-height: 1;
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
+	.cta--contact {
+		color: white;
+		background-color: #023afe;
+		text-decoration: none;
+		border-radius: 5px;
+	}
+
+	.cta--cv {
+		text-underline-offset: 4px;
+	}
+
+	hr {
+		width: 70vw;
+		margin: 0 auto;
+		border: none;
+		border-top: 3px solid #555;
+	}
+</style>
