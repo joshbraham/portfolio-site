@@ -1,6 +1,5 @@
 <svelte:head>
-	<title>Welcome! &nbsp;|&nbsp; joshbraham.</title>
-	<meta name="description" content="Joshua Abrahaam's developer profile." />
+	<title>joshbraham.</title>
 </svelte:head>
 
 <section class="hero">
@@ -10,7 +9,7 @@
 		I am an aspiring frontend/backend/mobile/desktop/API etc. web developer & software engineer.
 	</p>
 	<div class="ctas">
-		<a href="/contact" class="cta--contact">Contact Me <i class="fa-regular fa-envelope" /></a>
+		<a href="/contact" class="cta--primary">Contact Me <i class="fa-regular fa-envelope" /></a>
 		<a href="#" class="cta--cv"><span>Download my CV</span><span>&rarr;</span></a>
 	</div>
 </section>
@@ -46,8 +45,7 @@
 	}
 
 	.name {
-		font-family: 'Raleway', sans-serif;
-		font-size: 40px;
+		font-size: 56px;
 		font-weight: 900;
 		letter-spacing: -0.04em;
 		color: #ddd;
@@ -72,23 +70,6 @@
 		display: flex;
 		align-items: center;
 		gap: 2rem;
-	}
-
-	.ctas > * {
-		display: inline-block;
-		transition: var(--default-transition);
-	}
-
-	.cta--contact {
-		color: white;
-		padding: 1rem 1.5rem;
-		background-color: var(--clr-primary);
-		text-decoration: none;
-		border-radius: 0.25rem;
-	}
-
-	.cta--contact:hover {
-		background-color: var(--clr-primary-light);
 	}
 
 	.fa-envelope {

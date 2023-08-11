@@ -3,6 +3,10 @@
 	import './stylesheets/reset.css';
 </script>
 
+<svelte:head>
+	<meta name="description" content="Joshua Abraham's developer profile." />
+</svelte:head>
+
 <header>
 	<div class="header-left">
 		<a href="/"><svg class="logo"><use href="#logo" /></svg></a>
@@ -19,8 +23,8 @@
 			<li><a href="/skills">Skills</a></li>
 			<li><a href="/portfolio">Portfolio</a></li>
 			<li><a href="/competencies">Competencies</a></li>
-			<li><a href="/contact">Contact</a></li>
 		</ul>
+		<a class="cta--primary" id="nav-cta" href="/contact">Contact</a>
 	</nav>
 </header>
 
@@ -104,25 +108,31 @@
 	}
 
 	.fa-brands {
-		transition: color 150ms;
+		transition: var(--default-transition);
 		color: var(--svg-color);
 	}
 
 	.fa-brands:hover {
 		color: var(--clr-primary-light);
+		scale: 1.1;
 	}
 
 	nav {
-		height: fit-content;
-	}
-
-	.nav-links {
-		list-style: none;
+		/* height: fit-content; */
+		/* border: 1px dashed red; */
+		display: flex;
+		gap: 1.5rem;
 		font-family: 'Chivo Mono', monospace;
 		font-size: 0.875rem;
 		font-weight: 600;
+	}
+
+	.nav-links {
+		/* border: 1px dashed green; */
+		list-style: none;
 		display: flex;
-		gap: 1.5rem;
+		align-items: center;
+		gap: inherit;
 	}
 
 	.nav-links a {
@@ -150,6 +160,10 @@
 
 	.nav-links a:hover::after {
 		scale: 1 3;
+	}
+
+	#nav-cta {
+		padding: 0.5em 0.75em;
 	}
 
 	main {
