@@ -11,7 +11,7 @@
 	</p>
 	<div class="ctas">
 		<a href="/contact" class="cta--contact">Contact Me <i class="fa-regular fa-envelope" /></a>
-		<a href="#" class="cta--cv">Download my CV<span class="nbsp">&nbsp;&nbsp;</span>&rarr;</a>
+		<a href="#" class="cta--cv"><span>Download my CV</span><span>&rarr;</span></a>
 	</div>
 </section>
 
@@ -20,8 +20,10 @@
 <style>
 	.hero {
 		height: 35rem;
+		line-height: 1;
 		display: flex;
 		flex-direction: column;
+		gap: 1rem;
 		justify-content: center;
 		background: rgba(0, 0, 0, 0.95) url('./hero-img.jpg');
 		background-size: cover;
@@ -53,56 +55,61 @@
 	}
 
 	.lastname {
-		color: #6800c3;
+		color: var(--clr-accent);
 	}
 
 	.description {
 		font-size: 24px;
 		width: 44ch;
 		line-height: 1.3;
-		/* color: white; */
+	}
+
+	.ctas {
+		margin-top: 1.5rem;
+		font-family: 'Chivo Mono', monospace;
+		letter-spacing: 0.125em;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		gap: 2rem;
 	}
 
 	.ctas > * {
-		font-family: 'Raleway', sans-serif;
-		font-size: 14px;
-		font-weight: 800;
-		letter-spacing: 4px;
-		margin-top: 1.5rem;
-		line-height: 1;
 		display: inline-block;
-		text-transform: uppercase;
-		transition: all 150ms;
+		transition: var(--default-transition);
 	}
 
 	.cta--contact {
 		color: white;
 		padding: 1rem 1.5rem;
-		background-color: #023afe;
+		background-color: var(--clr-primary);
 		text-decoration: none;
-		border-radius: 0.5rem;
+		border-radius: 0.25rem;
 	}
 
 	.cta--contact:hover {
-		background-color: hsl(227, 100%, 65%);
+		background-color: var(--clr-primary-light);
+	}
+
+	.fa-envelope {
+		position: relative;
+		top: 1px;
 	}
 
 	.cta--cv {
-		padding: 1rem 1.5rem;
-		color: #023afe;
-		text-underline-offset: 4px;
+		padding-block: 0.25em;
+		/* margin-inline-start: 1em; */
+		color: inherit;
+		text-decoration: none;
+		border-bottom: 1px solid currentColor;
+		display: inline-flex;
+		gap: 0.75em;
+		transition: var(--default-transition);
 	}
 
 	.cta--cv:hover {
-		color: inherit;
-	}
-
-	.nbsp {
-		scale: 0.5 1;
-	}
-
-	.cta--cv:hover .nbsp {
-		scale: 1;
+		color: var(--clr-primary);
+		gap: 1.5em;
 	}
 
 	hr {

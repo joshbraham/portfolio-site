@@ -96,11 +96,11 @@
 		position: relative;
 		top: 2px;
 		fill: var(--svg-color);
-		transition: fill 150ms ease-in;
+		transition: var(--default-transition);
 	}
 
 	.logo:hover {
-		fill: #6800c3;
+		fill: var(--clr-accent);
 	}
 
 	.fa-brands {
@@ -109,7 +109,7 @@
 	}
 
 	.fa-brands:hover {
-		color: #023afe;
+		color: var(--clr-primary-light);
 	}
 
 	nav {
@@ -127,9 +127,9 @@
 
 	.nav-links a {
 		text-decoration: none;
-		transition: color 150ms;
+		transition: var(--default-transition);
 		position: relative;
-		color: inherit;
+		color: currentColor;
 	}
 
 	.nav-links a::after {
@@ -138,15 +138,14 @@
 		left: 0;
 		bottom: -2px;
 		width: 100%;
-		background: #023afe;
+		background: var(--clr-primary);
 		height: 1px;
 		transform-origin: top;
-		transition-property: scale;
-		transition-duration: inherit;
+		transition: var(--default-transition);
 	}
 
 	.nav-links a:hover {
-		color: #023afe;
+		color: var(--clr-primary);
 	}
 
 	.nav-links a:hover::after {
