@@ -7,10 +7,10 @@
 	<span class="greeting">Hello! My name is</span>
 	<h1 class="name">Joshua <span class="lastname">Abraham.</span></h1>
 	<p class="description">
-		I am an amateur frontend, backend, mobile, desktop, and API developer & software engineer.
+		I am an aspiring frontend/backend/mobile/desktop/API etc. web developer & software engineer.
 	</p>
 	<div class="ctas">
-		<a href="#" class="cta--contact">Contact Me <i class="fa-regular fa-envelope" /></a>
+		<a href="/contact" class="cta--contact">Contact Me <i class="fa-regular fa-envelope" /></a>
 		<a href="#" class="cta--cv">Download my CV<span class="nbsp">&nbsp;&nbsp;</span>&rarr;</a>
 	</div>
 </section>
