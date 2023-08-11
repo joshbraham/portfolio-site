@@ -9,7 +9,7 @@
 
 <style>
 	section {
-		--backdrop-color: rgb(54, 54, 54);
+		--backdrop-color: rgb(22, 22, 22);
 		padding-block-start: calc(var(--page-offset) + 10rem);
 		padding-inline: var(--page-inline-padding);
 		font: 4em 'Chivo Mono';
