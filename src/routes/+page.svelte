@@ -10,8 +10,8 @@
 		I am an amateur frontend, backend, mobile, desktop, and API developer & software engineer.
 	</p>
 	<div class="ctas">
-		<a href="#" class="cta--contact">Contact Me &nbsp;<i class="fa-regular fa-envelope" /></a>
-		<a href="#" class="cta--cv">Download my CV &rarr;</a>
+		<a href="#" class="cta--contact">Contact Me <i class="fa-regular fa-envelope" /></a>
+		<a href="#" class="cta--cv">Download my CV<span class="nbsp">&nbsp;&nbsp;</span>&rarr;</a>
 	</div>
 </section>
 
@@ -19,7 +19,7 @@
 
 <style>
 	.hero {
-		height: 32rem;
+		height: 35rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -27,7 +27,7 @@
 		background-size: cover;
 		background-blend-mode: color;
 		padding-inline: var(--page-inline-padding);
-		padding-block-start: 3rem;
+		padding-block-start: var(--page-offset);
 	}
 
 	.hero > * {
@@ -53,14 +53,14 @@
 	}
 
 	.lastname {
-		color: rgb(177, 0, 177);
+		color: #6800c3;
 	}
 
 	.description {
 		font-size: 24px;
 		width: 44ch;
 		line-height: 1.3;
-		color: white;
+		/* color: white; */
 	}
 
 	.ctas > * {
@@ -68,22 +68,41 @@
 		font-size: 14px;
 		font-weight: 800;
 		letter-spacing: 4px;
-		padding: 1rem 1.5rem;
 		margin-top: 1.5rem;
 		line-height: 1;
 		display: inline-block;
 		text-transform: uppercase;
+		transition: all 150ms;
 	}
 
 	.cta--contact {
 		color: white;
+		padding: 1rem 1.5rem;
 		background-color: #023afe;
 		text-decoration: none;
-		border-radius: 5px;
+		border-radius: 0.5rem;
+	}
+
+	.cta--contact:hover {
+		background-color: hsl(227, 100%, 65%);
 	}
 
 	.cta--cv {
+		padding: 1rem 1.5rem;
+		color: #023afe;
 		text-underline-offset: 4px;
+	}
+
+	.cta--cv:hover {
+		color: inherit;
+	}
+
+	.nbsp {
+		scale: 0.5 1;
+	}
+
+	.cta--cv:hover .nbsp {
+		scale: 1;
 	}
 
 	hr {

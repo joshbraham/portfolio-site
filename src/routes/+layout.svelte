@@ -69,15 +69,14 @@
 	}
 
 	header {
-		--color: white;
 		position: fixed;
+		z-index: 10;
 		top: 0;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem var(--page-inline-padding);
-		color: var(--color);
 	}
 
 	.header-left {
@@ -96,12 +95,17 @@
 		aspect-ratio: 2;
 		position: relative;
 		top: 2px;
-		fill: var(--color);
+		fill: var(--svg-color);
+		transition: fill 150ms ease-in;
+	}
+
+	.logo:hover {
+		fill: #6800c3;
 	}
 
 	.fa-brands {
 		transition: color 150ms;
-		color: var(--color);
+		color: var(--svg-color);
 	}
 
 	.fa-brands:hover {
@@ -114,6 +118,7 @@
 
 	.nav-links {
 		list-style: none;
+		font-family: 'Chivo Mono', monospace;
 		font-size: 0.875rem;
 		font-weight: 600;
 		display: flex;
@@ -124,7 +129,7 @@
 		text-decoration: none;
 		transition: color 150ms;
 		position: relative;
-		color: var(--color);
+		color: inherit;
 	}
 
 	.nav-links a::after {
