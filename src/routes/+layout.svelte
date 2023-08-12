@@ -113,7 +113,7 @@
 	}
 
 	.fa-brands:hover {
-		color: var(--clr-primary-light);
+		color: var(--clr-primary);
 		scale: 1.1;
 	}
 
@@ -135,6 +135,15 @@
 		gap: inherit;
 	}
 
+	.nav-links li {
+		transition: var(--default-transition);
+	}
+
+	.nav-links li:hover {
+		color: var(--clr-primary);
+		translate: 0 -2px;
+	}
+
 	.nav-links a {
 		text-decoration: none;
 		transition: var(--default-transition);
@@ -152,10 +161,6 @@
 		height: 1px;
 		transform-origin: top;
 		transition: var(--default-transition);
-	}
-
-	.nav-links a:hover {
-		color: var(--clr-primary);
 	}
 
 	.nav-links a:hover::after {

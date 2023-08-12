@@ -9,8 +9,10 @@
 		I am an aspiring frontend/backend/mobile/desktop/API etc. web developer & software engineer.
 	</p>
 	<div class="ctas">
-		<a href="/contact" class="cta--primary">Contact Me <i class="fa-regular fa-envelope" /></a>
-		<a href="#" class="cta--cv"><span>Download my CV</span><span>&rarr;</span></a>
+		<a href="/contact" class="cta--primary"><i class="fa-regular fa-envelope" /> Contact Me</a>
+		<a href="#" class="cta--cv"
+			><span><i class="fa-regular fa-file-pdf" /> Download my CV</span><span>&rarr;</span></a
+		>
 	</div>
 </section>
 

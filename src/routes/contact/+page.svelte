@@ -81,6 +81,11 @@
 		margin-block-end: 1rem;
 		border-radius: 0.25em;
 		font-size: 16px;
+		transition: background 100ms;
+	}
+
+	:is(input, textarea, select):focus {
+		background: #2a2a2a;
 	}
 
 	button,
